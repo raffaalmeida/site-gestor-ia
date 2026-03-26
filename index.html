@@ -1,1 +1,137 @@
-"<html><body><h1>Gestor IA</h1><p>Assistente de finan�as oficial.</p></body></html>" 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor IA - Sua Saúde Financeira Inteligente</title>
+    <style>
+        /* --- Variáveis de Cor e Reset --- */
+        :root {
+            --primary: #004a99; /* Azul Confiança */
+            --secondary: #2ecc71; /* Verde Saúde/Dinheiro */
+            --text: #333;
+            --light-bg: #f4f7f6;
+            --white: #fff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text); background-color: var(--light-bg); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+
+        /* --- Cabeçalho e Navegação --- */
+        header { background-color: var(--white); padding: 20px 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+        .logo span { color: var(--secondary); }
+        nav ul { display: flex; gap: 30px; }
+        nav a { font-weight: 500; font-size: 0.95rem; }
+        nav a:hover { color: var(--primary); }
+
+        /* --- Seções Principais --- */
+        section { padding: 100px 0; min-height: 80vh; display: flex; align-items: center; }
+        .section-title { text-align: center; font-size: 2.5rem; color: var(--primary); margin-bottom: 60px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+
+        /* --- Home (Hero) --- */
+        #home { background: linear-gradient(135deg, var(--primary) 0%, #002a5c 100%); color: var(--white); padding-top: 150px; text-align: center; }
+        #home .container { flex-direction: column; }
+        #home h1 { font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
+        #home p { font-size: 1.2rem; max-width: 700px; margin-bottom: 40px; opacity: 0.9; }
+        .btn { background-color: var(--secondary); color: var(--white); padding: 15px 30px; border-radius: 30px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+        .btn:hover { background-color: #27ae60; transform: translateY(-2px); }
+
+        /* --- Objetivos --- */
+        #objetivos { background-color: var(--white); }
+        .card { background-color: var(--light-bg); padding: 40px; border-radius: 10px; border-bottom: 4px solid transparent; transition: 0.3s; text-align: center;}
+        .card:hover { border-bottom: 4px solid var(--secondary); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .card-icon { font-size: 3rem; margin-bottom: 20px; color: var(--secondary); }
+        .card h3 { font-size: 1.5rem; color: var(--primary); margin-bottom: 15px; }
+
+        /* --- Dados e Privacidade --- */
+        #dados { background-color: var(--light-bg); }
+        .data-content { max-width: 800px; margin: 0 auto; background-color: var(--white); padding: 50px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .data-content h3 { color: var(--primary); margin-bottom: 20px; font-size: 1.3rem;}
+        .data-content p { margin-bottom: 20px; color: #555; }
+        .data-content strong { color: var(--text); }
+
+        /* --- Rodapé --- */
+        footer { background-color: #2c3e50; color: var(--white); padding: 40px 0; text-align: center; font-size: 0.9rem; }
+        footer p { opacity: 0.8; margin-bottom: 10px; }
+
+        /* --- Responsividade --- */
+        @media (max-width: 768px) {
+            #home h1 { font-size: 2.2rem; }
+            nav ul { gap: 15px; }
+            .section-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">Gestor<span>IA</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#objetivos">Objetivos</a></li>
+                    <li><a href="#dados">Dados</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h1>Sua Saúde Financeira,<br>Em Suas Mãos.</h1>
+            <p>O <strong>Gestor IA</strong> é a inteligência artificial desenvolvida para simplificar sua vida financeira diretamente no WhatsApp. Sem planilhas complexas, apenas conversas inteligentes.</p>
+            <a href="https://wa.me/SEU_NUMERO_DO_BOT" class="btn" target="_blank">Começar Agora</a>
+        </div>
+    </section>
+
+    <section id="objetivos">
+        <div class="container">
+            <h2 class="section-title">Nosso Propósito</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Clareza Imediata</h3>
+                    <p>Nosso objetivo é transformar dados complexos em insights simples. Entenda para onde seu dinheiro vai, no momento em que gasta.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Educação Ativa</h3>
+                    <p>Não apenas anotamos. Ajudamos você a identificar padrões de consumo e criar hábitos saudáveis para alcançar suas metas.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Segurança e Controle</h3>
+                    <p>Empoderamos você com o controle total do seu orçamento, eliminando surpresas no final do mês e reduzindo o estresse financeiro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dados">
+        <div class="container">
+            <h2 class="section-title">Segurança e Dados</h2>
+            <div class="data-content">
+                <h3>Sua Privacidade é Nossa Prioridade</h3>
+                <p>O <strong>Gestor IA</strong> opera sob os mais rigorosos padrões de segurança da informação. Entendemos a sensibilidade dos dados financeiros e agimos como guardiões da sua privacidade.</p>
+                <p><strong>Como tratamos seus dados:</strong> Utilizamos criptografia de ponta a ponta e processamento isolado para garantir que suas informações financeiras sejam acessíveis apenas por você.</p>
+                <p><strong>Nosso Compromisso:</strong> Seus dados são usados exclusivamente para gerar relatórios pessoais e categorizar seus gastos. <strong>Nós nunca venderemos ou compartilharemos seus dados com terceiros para fins publicitários.</strong></p>
+                <p>A conformidade com as diretrizes da Política Empresarial do WhatsApp é fundamental para nós.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Gestor IA - Tecnologia para Saúde Financeira.</p>
+            <p>Desenvolvido por Rafael Almeida | rafael@exemplo.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
